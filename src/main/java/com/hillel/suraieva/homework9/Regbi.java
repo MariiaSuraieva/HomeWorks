@@ -2,8 +2,9 @@ package com.hillel.suraieva.homework9;
 
 public class Regbi {
     public static void main(String[] args) {
-        int[] ageteam1 = new int[25];
-        int[] ageteam2 = new int[25];
+        int kolTeamMembers = 25;
+        int[] ageteam1 = new int[kolTeamMembers];
+        int[] ageteam2 = new int[kolTeamMembers];
         int sumAge1 = 0;
         int sumAge2 = 0;
 
@@ -28,7 +29,7 @@ public class Regbi {
                 System.out.println(ageteam2[i] + ".");
             } else System.out.print(ageteam2[i] + " ,");
         }
-        System.out.println(sumAge1/ageteam1.length);
-        System.out.println(sumAge2/ageteam2.length);
+        System.out.println((double)sumAge1/ageteam1.length);
+        System.out.println((double)sumAge2/ageteam2.length);
     }
 }
